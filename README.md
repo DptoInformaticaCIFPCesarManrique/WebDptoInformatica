@@ -1,3 +1,3 @@
 # WebDptoInformatica
-Web Departamento CIFP César Manrique
+Web Departamento Informática y Comunicaciones de CIFP César Manrique
 -- en proceso
