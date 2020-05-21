@@ -7,10 +7,10 @@ $white: #fff;
 $black: #000000;
 $darken: #0d1128;
 
-$primary: #01264e;
+$primary: rgba(0, 0, 0, 0.8);
 $secondary: #d8e8ef;
 $tertiary: #8cc152;
-$quarternary: #ae0900;
+$quarternary: #6d0000;
 $fifth: #5d50c6;
 
 
@@ -151,6 +151,118 @@ h1, h2, h3, h4, h5,
 	}
 }
 
+
+/* ESTILOS PROPIOS */
+
+#navbarSupportedContent ul {
+	margin-right: 0px !important;
+	justify-content: space-around;
+	width: 100%;
+
+	a:hover {
+		color: $quarternary;
+	}
+}
+
+#partners {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 30px;
+	/* height: 200px; */
+
+	a > img {
+		height: 100px;
+	}
+}
+
+#ciclos{
+
+	width: 80%;
+	margin: 20px auto;
+
+	button {
+		color: $primary;
+		font-size: 25px; 
+	}
+
+	.card-header:hover button {
+		color: $quarternary
+	}
+
+	.asignaturas {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	a:hover {
+		color: $quarternary;
+	}
+}
+
+#salidasLaborales {
+	width: 80%;
+	margin: 30px auto;
+
+	a:hover {
+		color: $quarternary;
+	}
+}
+
+#videosCesar {
+	width: 80%;
+	margin: 30px auto;
+	
+	div {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+}
+
+footer {
+	text-align: center;
+	padding: 2rem 10%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background-color: #555555;
+ 
+	&>div {
+		flex-basis: 32%;
+	}
+
+	&>div:nth-child(1){
+		background-image: url(../img/gobiernoCanarias-logo.png);
+		background-size: contain;
+		background-position: center center;
+		background-repeat: no-repeat;
+		min-height: 115px;
+		min-width: 250px;
+	}
+
+	&>div:nth-child(2){
+		background-image: url(../img/cesarManrique-logo.png);
+		background-size: contain;
+		background-position: center center;
+		background-repeat: no-repeat;
+		min-height: 115px;
+		min-width: 250px;
+	}
+
+	&>div:nth-child(3){
+		text-align: start;
+		font-style: italic;
+		color: whitesmoke;
+
+		p {
+			margin: 0px;
+		}
+	}
+}
+
+/* FIN ESTILOS PROPIOS */
 
 
 .ftco-navbar-light {
