@@ -10815,6 +10815,21 @@ footer > div:nth-child(3) p {
   margin: 0px;
 }
 
+#empresasColaboradoras {
+  width: 80%;
+  margin: 20px auto;
+}
+
+#logosEmpresas .item {
+  margin: 1em;
+}
+
+#logosEmpresas .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* FIN ESTILOS PROPIOS */
 .ftco-navbar-light {
   background: transparent !important;

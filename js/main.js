@@ -41,7 +41,7 @@
    $.Scrollax();
 
 	var carousel = function() {
-		$('.home-slider').owlCarousel({
+		$('#home-slider').owlCarousel({
 	    loop:true,
 	    autoplay: true,
 	    margin:0,
@@ -63,6 +63,17 @@
 	      }
 	    }
 		});
+		
+		$("#logosEmpresas").owlCarousel({ 
+				 autoPlay: 3000, //Set AutoPlay to 3 seconds
+		  
+				 items : 4,
+				 itemsDesktop : [1199,3],
+				 itemsDesktopSmall : [979,3]
+		  
+		});
+		
+
 		$('.carousel-testimony').owlCarousel({
 			autoplay: true,
 			center: true,
