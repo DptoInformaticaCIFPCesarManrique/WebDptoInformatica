@@ -98,6 +98,12 @@ h1, h2, h3, h4, h5,
 #carousel_dpto {
 	width: 80%;
 	margin: auto;	
+
+	.carousel-inner {
+		max-height: 400px;
+		display: flex;
+		align-items: center;
+	}
 }
 
 #partners {
