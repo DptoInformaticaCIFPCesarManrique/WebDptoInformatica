@@ -41,7 +41,7 @@
    $.Scrollax();
 
 	var carousel = function() {
-		$('#home-slider').owlCarousel({
+/*		$('#home-slider').owlCarousel({
 			loop:true,
 			dots:false,
 	   	autoplay: true,
@@ -57,7 +57,7 @@
 		 	paginationSpeed : 400,
 		 	singleItem:true,
 		 	autoHeight:true
-		});
+		});*/ 
 		
 		$("#logosEmpresas").owlCarousel({ 
 				autoplay:true,

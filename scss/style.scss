@@ -84,74 +84,6 @@ h1, h2, h3, h4, h5,
 	color: $primary!important;
 }
 
-.topper{
-	font-size: 15px;
-	width: 100%;
-	display: block;
-	@include media-breakpoint-down(sm){
-		margin-bottom: 10px;
-
-	}
-	.icon{
-		@include border-radius(50%);
-		span{
-			color: $primary;
-			font-size: 20px;
-		}
-	}
-	.text{
-		color: rgba(0,0,0,.7);
-		padding-left: 15px;
-		span{
-			width: 100%;
-			display: block;
-			&:first-child{
-				font-weight: 700;
-				color: $black;
-			}
-		}
-	}
-	.d-block{
-		width: 100%;
-	}
-	.btn{
-		width: 100%;
-		@include border-radius(0);
-	}
-}
-.searchform{
-	height:54px;
-	border: 1px solid rgba(255,255,255,.1);
-	@include border-radius(30px);
-	.form-control{
-		width: calc(100% - 52px);
-		border: none;
-		background: transparent !important;
-		color: rgba(255,255,255,.7) !important;
-		font-size: 16px;
-		&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-		  color: rgba(255,255,255,.7) !important;
-		}
-		&::-moz-placeholder { /* Firefox 19+ */
-		  color: rgba(255,255,255,.7) !important;
-		}
-		&:-ms-input-plac255h255l255er { /* IE 0+ */
-		  color: rgba(255,255,255,.7) !important;
-		}
-		&:-moz-placeholder { /* Firefox 18- */
-		  color: rgba(255,255,255,.7) !important;
-		}
-	}
-	.search{
-		width: 52px;
-		height: 52px;
-		span{
-			font-size: 20px;
-		}
-	}
-}
-
-
 /* ESTILOS PROPIOS */
 
 #navbarSupportedContent ul {
@@ -162,6 +94,10 @@ h1, h2, h3, h4, h5,
 	a:hover {
 		color: $quarternary;
 	}
+}
+#carousel_dpto {
+	width: 80%;
+	margin: auto;	
 }
 
 #partners {
@@ -177,7 +113,6 @@ h1, h2, h3, h4, h5,
 }
 
 #ciclos{
-
 	width: 80%;
 	margin: 20px auto;
 
@@ -270,7 +205,7 @@ footer {
 #logosEmpresas .item{
 	margin: 1em;
  }
-#logosEmpresas .item img dir{
+#logosEmpresas .item img {
 	display: block;
 	width: 100%;
 	height: auto;
@@ -348,7 +283,6 @@ footer {
 					}
 				}
 			}
-
 			
 			&.ftco-seperator {
 				position: relative;
@@ -503,7 +437,6 @@ footer {
 		letter-spacing: 2px;
 	}
 }
-
 
 .hero-wrap{
 	width: 100%;
@@ -1016,169 +949,6 @@ textarea.form-control {
 	background: #3c312e;
 }
 
-
-.ftco-footer {
-	font-size: 14px;
-	background: #232323;
-	padding: 6em 0;
-	.ftco-footer-widget {
-		width: 100%;
-		display: block;
-		h2 {
-			font-weight: normal;
-			color: $white;
-			margin-bottom: 40px;
-			font-size: 22px;
-			font-weight: 500;
-		}
-		.logo{
-			color: $primary;
-			span{
-				color: $secondary;
-			}
-		}
-		ul{
-			li{
-				a{
-					span{
-						color: $white;
-					}
-				}
-			}
-		}
-		.btn-primary{
-			background: $white !important;
-			border: 2px solid $white !important;
-			&:hover{
-				background: $white;
-				border: 2px solid $white !important;
-			}
-		}
-	}
-	p {
-		color: rgba($white, .7);
-	}
-	a {
-		color: rgba($white, .7);
-		&:hover {
-			color: $white;
-		}
-	}
-	.ftco-heading-2 {
-		font-size: 17px;
-		font-weight: 400;
-		color: $black;
-	}
-
-	.categories{
-		li{
-			border-bottom: 1px solid rgba(255,255,255,.1);
-			a{
-				span{
-					color: rgba(255,255,255,.5) !important;
-				}
-			}
-		}
-	}
-	.subscribe-form{
-		.form-group {
-			position: relative;
-			margin-bottom: 0;
-			@include border-radius(0);
-			input {
-				@include border-radius(2px);
-				width: 100%;
-				background: rgba(255,255,255,.1) !important;
-				border: none;
-				color: rgba(255,255,255,.7) !important;
-				font-size: 16px;
-				&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-				  color: rgba(255,255,255,.7) !important;
-				}
-				&::-moz-placeholder { /* Firefox 19+ */
-				  color: rgba(255,255,255,.7) !important;
-				}
-				&:-ms-input-placeholder { /* IE 0+ */
-				  color: rgba(255,255,255,.7) !important;
-				}
-				&:-moz-placeholder { /* Firefox 18- */
-				  color: rgba(255,255,255,.7) !important;
-				}
-			}
-			.submit{
-				color: $white !important;
-				font-size: 16px;
-				background: $fifth !important;
-				border: none !important;
-				@include border-radius(2px);
-				@include transition(.3s);
-				&:hover{
-					cursor: pointer;
-					background: $primary !important;
-				}
-			}
-		}
-		.icon {
-			position: absolute;
-			top: 50%;
-			right: 20px;
-			transform: translateY(-50%);
-			color: rgba(255,255,255,.8);
-		}
-	}
-	.block-21 {
-		.text {
-			.heading {
-				font-weight: 400;
-				font-size: 16px;
-				a {
-					color: rgba(255,255,255,.9);
-					&:hover, &:active, &:focus {
-						color: $primary;
-					}
-				}
-			}
-			.meta {
-				> div {
-					display: inline-block;
-					font-size: 12px;
-					margin-right: 5px;
-					a {
-						color: lighten($black, 50%);
-					}
-				}
-			}
-		}
-	}
-}
-
-
-.ftco-footer-social {
-	li {
-		list-style: none;
-		margin: 0 10px 0 0;
-		display: inline-block;
-		a {
-			height: 40px;
-			width: 40px;
-			display: block;
-			float: left;
-			background: rgba($white, .05);
-			border-radius: 50%;
-			position: relative;
-			span {
-				position: absolute;
-				font-size: 20px;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-			}
-			&:hover {
-				color: $white;
-			}
-		}
-	}
-}
 .footer-small-nav {
 	> li {
 		display: inline-block;
@@ -1199,7 +969,6 @@ textarea.form-control {
 	}
 }
 
-
 // Map
 
 #map {
@@ -1209,7 +978,6 @@ textarea.form-control {
 		height: 300px;
 	}
 }
-
 
 @-webkit-keyframes pulse {
   0% {
@@ -1315,26 +1083,6 @@ textarea.form-control {
 }
 
 
-.video{
-	width: 100%;
-	position: relative;
-}
-.icon-video{
-	width: 80px;
-	height: 80px;
-	background: $white;
-	-webkit-box-shadow: 0px 0px 34px -8px rgba(0,0,0,0.1);
-	-moz-box-shadow: 0px 0px 34px -8px rgba(0,0,0,0.1);
-	box-shadow: 0px 0px 34px -8px rgba(0,0,0,0.1);
-	z-index: 1;
-	margin: 0 auto;
-	@include border-radius(50%);
-	span{
-		font-size:30px;
-		color: $primary;
-	}
-}
-
 #section-counter{
 	position: relative;
 	z-index: 0;
@@ -1398,7 +1146,6 @@ textarea.form-control {
 		}
 	}
 }
-
 
 .ftco-consult{
 	background-size: cover;
@@ -1788,8 +1535,6 @@ textarea.form-control {
 		}
 	}
 }
-
-
 
 #ftco-loader {
 	position: fixed;
