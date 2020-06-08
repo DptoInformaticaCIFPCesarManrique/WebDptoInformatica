@@ -111,7 +111,6 @@ h1, h2, h3, h4, h5,
 	justify-content: space-around;
 	flex-wrap: wrap;
 	padding: 30px;
-	/* height: 200px; */
 
 	a > img {
 		height: 100px;
@@ -142,6 +141,15 @@ h1, h2, h3, h4, h5,
 	}
 }
 
+#distribucionesHorarias {
+	width: 80%;
+	margin: 30px auto;
+
+	a:hover {
+		color: $quarternary;
+	}
+}
+ 
 #salidasLaborales {
 	width: 80%;
 	margin: 30px auto;
@@ -151,14 +159,16 @@ h1, h2, h3, h4, h5,
 	}
 }
 
-#videosCesar {
-	width: 80%;
-	margin: 30px auto;
-	
-	div {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
+#multimedia {
+	text-align: center;
+	padding: 2rem 10%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background-color: #555555;
+ 
+	&>div {
+		flex-basis: 32%;
 	}
 }
 
@@ -902,22 +912,6 @@ footer {
 }
 
 
-.form-control {
-	height: 52px!important;
-	background: $white!important;
-	color: $black!important;
-	font-size: 18px;
-	border-radius: 0px;
-	box-shadow: none!important;
-	border: 1px solid rgba(0,0,0,.1);
-	&:focus, &:active {
-		border-color: $black;
-	}
-}
-textarea.form-control {
-	height: inherit!important;
-}
-
 .ftco-animate {
 	opacity: 0;
 	visibility: hidden;
@@ -1057,35 +1051,6 @@ textarea.form-control {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-}
-
-// magnific pop up
-
-.image-popup {
-	cursor: -webkit-zoom-in;
-	cursor: -moz-zoom-in;
-	cursor: zoom-in;
-}
-.mfp-with-zoom .mfp-container,
-.mfp-with-zoom.mfp-bg {
-  opacity: 0;
-  -webkit-backface-visibility: hidden;
-  -webkit-transition: all 0.3s ease-out; 
-  -moz-transition: all 0.3s ease-out; 
-  -o-transition: all 0.3s ease-out; 
-  transition: all 0.3s ease-out;
-}
-
-.mfp-with-zoom.mfp-ready .mfp-container {
-    opacity: 1;
-}
-.mfp-with-zoom.mfp-ready.mfp-bg {
-    opacity: 0.8;
-}
-
-.mfp-with-zoom.mfp-removing .mfp-container, 
-.mfp-with-zoom.mfp-removing.mfp-bg {
-  opacity: 0;
 }
 
 
