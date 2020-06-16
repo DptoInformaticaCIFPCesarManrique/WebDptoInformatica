@@ -10652,6 +10652,12 @@ h1, h2, h3, h4, h5,
   font-size: 25px;
 }
 
+@media (max-width: 767.98px) {
+  #ciclos button {
+    font-size: 12px;
+  }
+}
+
 #ciclos .card-header:hover button {
   color: #6d0000;
 }
@@ -10696,6 +10702,18 @@ h1, h2, h3, h4, h5,
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+@media (max-width: 767.98px) {
+  #multimedia {
+    display: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #multimedia iframe {
+    max-width: 300px;
+  }
 }
 
 footer {
