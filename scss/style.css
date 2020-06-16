@@ -10679,11 +10679,6 @@ h1, h2, h3, h4, h5,
   color: #6d0000;
 }
 
-/* for twitter feed */
-.entry-content .twitter-tweet-rendered {
-  max-width: 100% !important;
-}
-
 #salidasLaborales {
   width: 80%;
   margin: 30px auto;
@@ -10693,20 +10688,14 @@ h1, h2, h3, h4, h5,
   color: #6d0000;
 }
 
-#videosCesar {
-  width: 80%;
-  margin: 30px auto;
-}
-
-#videosCesar div {
+#multimedia {
+  text-align: center;
+  padding: 2rem 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 footer {
@@ -11533,25 +11522,6 @@ footer > div:nth-child(3) p {
   }
 }
 
-.form-control {
-  height: 52px !important;
-  background: #fff !important;
-  color: #000000 !important;
-  font-size: 18px;
-  border-radius: 0px;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.form-control:focus, .form-control:active {
-  border-color: #000000;
-}
-
-textarea.form-control {
-  height: inherit !important;
-}
-
 .ftco-animate {
   opacity: 0;
   visibility: hidden;
@@ -11687,35 +11657,6 @@ textarea.form-control {
   background-position: center center;
 }
 
-/*
-.image-popup {
-	cursor: -webkit-zoom-in;
-	cursor: -moz-zoom-in;
-	cursor: zoom-in;
-} 
-
-.mfp-with-zoom .mfp-container,
-.mfp-with-zoom.mfp-bg {
-  opacity: 0;
-  -webkit-backface-visibility: hidden;
-  -webkit-transition: all 0.3s ease-out; 
-  -moz-transition: all 0.3s ease-out; 
-  -o-transition: all 0.3s ease-out; 
-  transition: all 0.3s ease-out;
-}
-
-.mfp-with-zoom.mfp-ready .mfp-container {
-    opacity: 1;
-}
-.mfp-with-zoom.mfp-ready.mfp-bg {
-    opacity: 0.8;
-}
-
-.mfp-with-zoom.mfp-removing .mfp-container, 
-.mfp-with-zoom.mfp-removing.mfp-bg {
-  opacity: 0;
-}
-*/
 #section-counter {
   position: relative;
   z-index: 0;

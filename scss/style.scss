@@ -164,13 +164,7 @@ h1, h2, h3, h4, h5,
 	padding: 2rem 10%;
 	display: flex;
 	justify-content: space-around;
-	flex-wrap: wrap;
-	background-color: #555555;
- 
-	&>div {
-		flex-basis: 32%;
 	}
-}
 
 footer {
 	text-align: center;
